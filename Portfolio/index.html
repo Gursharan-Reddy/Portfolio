@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gursharan's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="Css/styles.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="bg"></canvas>
+    <div class="hero-content text-white text-center d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-4 font-weight-bold">Gursharan Balareddy</h1>
+      <h3 class="mb-3">Frontend Web Developer</h3>
+      <a href="#projects" class="btn btn-lg btn-outline-light">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-5 text-center bg-light">
+    <div class="container">
+      <img src="images/profile.jpg" class="rounded-circle mb-3 shadow" width="150" alt="Profile" />
+      <p class="lead">
+        I'm a passionate frontend developer experienced in HTML, CSS, JavaScript, and Bootstrap. I love building responsive,
+        interactive, and clean UI experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-5 text-center bg-white">
+    <div class="container">
+      <h2 class="mb-4">My Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <img src="images/project1.png" class="card-img-top" alt="Project 1" />
+            <div class="card-body">
+              <h5 class="card-title">Todos App</h5>
+              <p class="card-text">Task manager built with HTML, CSS, JS.</p>
+              <a href="http://todoappw.ccbp.tech" target="_blank" class="btn btn-outline-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <img src="images/project2.png" class="card-img-top" alt="Project 2" />
+            <div class="card-body">
+              <h5 class="card-title">Wikipedia Search</h5>
+              <p class="card-text">Custom Wikipedia search using REST API.</p>
+              <a href="http://wikipediaz.ccbp.tech" target="_blank" class="btn btn-outline-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <img src="images/project3.png" class="card-img-top" alt="Project 3" />
+            <div class="card-body">
+              <h5 class="card-title">Food Munch</h5>
+              <p class="card-text">Fully responsive food listing website.</p>
+              <a href="http://foodmunchmm.ccbp.tech" target="_blank" class="btn btn-outline-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form id="contactForm" class="mx-auto" style="max-width: 600px;">
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="Your Name" />
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="Your Email" />
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="Js/script.js"></script>
+</body>
+</html>
